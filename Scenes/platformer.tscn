@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqvnfxtf58im3"]
+
+[ext_resource type="Script" path="res://scripts/platformer.gd" id="1_ynswm"]
+[ext_resource type="Texture2D" uid="uid://dtf4hmf5arme" path="res://images/mecquackma.jpg" id="2_n6krt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pn13k"]
+size = Vector2(128, 128)
+
+[node name="platformer" type="CharacterBody2D" node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_ynswm")
+sprite = NodePath("Mecquackma")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_pn13k")
+
+[node name="Mecquackma" type="Sprite2D" parent="."]
+scale = Vector2(0.568889, 0.568889)
+texture = ExtResource("2_n6krt")
+region_rect = Rect2(-362.5, -118, 174, 162)

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfm1axysmbyrj"]
+
+[ext_resource type="Script" path="res://scripts/click_and_move.gd" id="1_rg03g"]
+[ext_resource type="Texture2D" uid="uid://ruafv7vexeg4" path="res://images/be gay do crimes.jpg" id="2_k5s5c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2vc34"]
+size = Vector2(128, 128)
+
+[node name="click_and_move" type="CharacterBody2D"]
+script = ExtResource("1_rg03g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2vc34")
+
+[node name="BeGayDoCrimes" type="Sprite2D" parent="."]
+scale = Vector2(0.213333, 0.213333)
+texture = ExtResource("2_k5s5c")
